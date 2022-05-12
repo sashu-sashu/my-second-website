@@ -1,0 +1,371 @@
+  /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+/*# sourceMappingURL=normalize.min.css.map */
+
+
+:root {
+    --primary-color: #1800FF;
+    --primary-color-lighter: #004cff;
+    --secondary-color: #26FF00;
+    --secondary-color-lighter: #95ff82;
+    --visited-link-color: #e44aff;
+    --dark-grey: #2b2b2b;
+    --light-grey: #d3d3d3;
+    --body-color: #e2e2e2;
+    --border-bottom-color: #0000004d;
+    --white: white;
+    --paragraph: 16px;
+  }
+
+body * {
+    box-sizing: border-box;
+}
+
+body, body * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: var(--paragraph);
+    line-height: 1.6;
+  
+    background-color: var(--body-color);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    padding: 0px 20px
+}
+
+h1 {
+    font-size: 30px;
+}
+  
+h2 {
+    font-size: 24px;
+}
+  
+h3 {
+    font-size: 18px;
+}
+
+.small-caps {
+    font-variant: small-caps;
+}
+.font-style {
+    font-style: italic;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+  
+  
+.fixed__menu--bar ul {
+
+    list-style: none;
+}  
+
+.fixed__menu--bar li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+
+  /*
+Button styling
+ */
+.button, button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the button */
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid var(--border-bottom-color);
+    transition: 0.4s all ease-in-out
+  }
+  
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    background-color: var(--secondary-color);
+  }
+
+.button:visited {
+    /* visited link */
+    color: var(--white);
+  }
+
+a {
+  color: var(--primary-color);
+  }
+
+a:visited {
+    /* visited link */
+    color: var(--visited-link-color);
+  }
+
+a:hover, a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+  }  
+  
+a:active {
+    /* selected link */
+    color: #6966ff;
+  }
+
+button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    padding: 10px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid var(--border-bottom-color);
+  }
+
+
+button:hover, button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.7;
+  }
+
+.button__secondary {
+    background-color: var(--secondary-color);
+    color: var();
+  }
+
+.navigation-list__item--active{
+    text-decoration: none;
+    
+  }
+
+.page-main {
+    max-width: 700px;
+    margin: 150px auto 0 auto;
+  }
+
+.page-header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--white);
+  }
+
+.page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+  }
+
+.profile__portrait {
+    float: left;
+  }
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+.profile__portrait {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+  }
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+.article__img--right {
+    float: right;
+  } 
+
+
+
+
+#layout {
+    max-width: 700px;
+    margin: 150px auto 0 auto;
+  }
+
+#footer {
+    max-width: 700px;
+    margin: auto;
+  }
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px 20px;
+  }
+
+.grid__item {
+    background-color: var(--light-grey);
+    padding: 20px 20px;
+  }
+
+.grid__item:last-child {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+@media all and (max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+@media all and (min-width: 500px) and (max-width: 750px){
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+@media all and (max-width: 750px) {
+    .grid {
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+
+  /*
+Animation on the About Page
+ */
+.illustration {
+    display: flex;
+    clear: both;
+    max-width: 100%;
+    height: auto;
+    padding: 50px 0 ;
+}
+
+  @keyframes color-change {
+    0% {
+        fill: #7d74ff;
+      }
+      50% {
+        fill: #1800FF;
+      }
+      100% {
+        fill: #e44aff;
+      }
+  }
+
+.smile {
+     animation: 4s color-change infinite alternate linear;
+  }
+
+@keyframes skateboard-move {
+    from {
+      transform: translate(0, 0px);
+      fill: #1800FF;
+    }
+    to {
+      transform: translate(100px, 0px);
+      fill: #1800FF;
+    }
+  }
+
+.skateboard {
+    animation-duration: 5s;
+    animation-name: skateboard-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+
+@keyframes heart-g-move-reverse {
+    from {
+      transform: translate(0px, 0px);
+      fill: #1800FF;
+    }
+    to {
+      transform: translate(0px, 20px);
+      fill: #1800FF;
+    }
+  }
+
+  .heart-g {
+    animation: 3s heart-g-move-reverse infinite alternate linear;
+  }
+
+@keyframes heart-p-scale {
+
+    0% {
+        transform: scale(0, 0);
+        fill: #7d74ff;
+      }
+    50% {
+        fill: #1800FF;
+      }
+    100% {
+        transform: scale(0,05, 0,05);
+        fill: #e44aff;
+      }
+  }
+
+  .heart-p {
+    animation: 3s heart-p-scale
+    infinite alternate ;
+  }
+
+@keyframes pizza-rotation {
+
+    from {
+        transform: rotate(0deg);
+      }
+    to {
+        transform: rotate(35deg);
+      }
+  }
+
+  .pizza {
+    fill: #1800FF;
+    animation: 3s pizza-rotation
+    infinite alternate ease-in-out;
+  }
+
+  
