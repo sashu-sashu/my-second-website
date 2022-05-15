@@ -197,6 +197,7 @@ button:hover, button:focus {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: var(--body-color);
   }
 
 .profile__portrait {
