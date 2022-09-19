@@ -35,10 +35,9 @@ body {
 }
 
 h1,
-h2,
 h3 {
     font-weight: 700;
-    padding: 0px 20px
+    padding: 20px 20px
 }
 
 h1 {
@@ -47,6 +46,7 @@ h1 {
   
 h2 {
     font-size: 24px;
+    padding: 20px 0px
 }
   
 h3 {
@@ -58,6 +58,8 @@ h3 {
 }
 .font-style {
     font-style: italic;
+    font-size: 20px;
+    padding: 20px 20px
 }
 
 .social-media ul {
@@ -178,7 +180,7 @@ button:hover, button:focus {
     justify-content: space-between;
     width: 100%;
     padding: 20px;
-    background-color: var(--white);
+    background-color: var(--body-color);
   }
 
 .page-header__item:last-child {
@@ -206,6 +208,13 @@ button:hover, button:focus {
     margin-right: 40px;
     border-radius: 50%;
   }
+
+.preview__work {
+    float: left;
+    width: 250px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+  }  
 
 
 /* overwritten value bg-color*/
@@ -235,21 +244,21 @@ main.profile {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     padding: 20px 20px;
   }
 
 .grid__item {
     background-color: var(--lght-grey);
-    padding: 20px 20px;
+    padding: 60px 20px;
   }
 
 .grid__item:last-child {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 1;
   }
 
 @media all and (max-width: 500px) {
