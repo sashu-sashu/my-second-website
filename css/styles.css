@@ -459,10 +459,16 @@ Animation on the About Page
   animation: 3s pizza-rotation infinite alternate ease-in-out;
 }
 
-.navbar-collapse.collapse.show ul {
-  flex-direction: column !important;
+#navbarSupportedContent.mobile ul {
+  opacity: 0;
 }
-.navbar-collapse.collapse.show li {
+
+#navbarSupportedContent.mobile.show ul {
+  flex-direction: column !important;
+  opacity: 1;
+}
+
+.navbar-collapse.collapse.mobile.show li {
   padding-right: 1rem;
   text-align: right;
 }
