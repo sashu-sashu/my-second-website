@@ -59,6 +59,7 @@ sup {
 img {
   border-style: none;
 }
+
 button,
 input,
 optgroup,
@@ -67,7 +68,7 @@ textarea {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
-  margin: 0;
+  margin: 10px 10px 10px 10px;
 }
 button,
 input {
@@ -180,6 +181,15 @@ body {
   background-color: var(--body-color);
 }
 
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.icon {
+  padding: 10px 5px;
+}
+
 h1,
 h3 {
   font-weight: 700;
@@ -271,6 +281,11 @@ a:active {
   color: #6966ff;
 }
 
+.w-75 {
+  width: 100% !important;
+  display: flex;
+}
+
 button {
   /* overwrites browser defaults and resets the border */
   border: none;
@@ -293,6 +308,7 @@ button:focus {
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
   opacity: 0.7;
+  background-color: #6966ff;
 }
 
 .button__secondary {
@@ -374,7 +390,7 @@ Animation on the About Page
   clear: both;
   max-width: 100%;
   height: auto;
-  padding: 50px 0;
+  padding: 50px 50px;
 }
 
 @keyframes color-change {
@@ -471,4 +487,19 @@ Animation on the About Page
 .navbar-collapse.collapse.mobile.show li {
   padding-right: 1rem;
   text-align: right;
+}
+
+.navbar-nav .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: #e44aff;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
 }
